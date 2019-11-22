@@ -4,7 +4,7 @@
 		module="prototype-api-play-24-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20191122112854"
+		publication="20191122124129"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

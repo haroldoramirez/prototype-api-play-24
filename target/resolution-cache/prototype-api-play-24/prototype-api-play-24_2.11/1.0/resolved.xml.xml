@@ -4,7 +4,7 @@
 		module="prototype-api-play-24_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20191122113733"
+		publication="20191122144709"
 	>
 		<description>
 		prototype-api-play-24
@@ -54,5 +54,6 @@
 		<dependency org="org.mindrot" name="jbcrypt" rev="0.3m" conf="compile->default(compile)"/>
 		<dependency org="eu.bitwalker" name="UserAgentUtils" rev="1.20" conf="compile->default(compile)"/>
 		<dependency org="it.innove" name="play2-pdf" rev="1.4.0" conf="compile->default(compile)"/>
+		<dependency org="com.adrianhurt" name="play-bootstrap_2.11" rev="1.0-P24-B3" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -36,7 +36,8 @@ libraryDependencies ++= Seq(
   "commons-validator" % "commons-validator" % "1.5.1",
   "org.mindrot" % "jbcrypt" % "0.3m",
   "eu.bitwalker" % "UserAgentUtils" % "1.20",
-  "it.innove" % "play2-pdf" % "1.4.0"
+  "it.innove" % "play2-pdf" % "1.4.0",
+  "com.adrianhurt" % "play-bootstrap_2.11" % "1.0-P24-B3"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the

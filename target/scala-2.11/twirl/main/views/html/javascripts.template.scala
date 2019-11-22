@@ -49,7 +49,7 @@ Seq[Any](format.raw/*1.1*/("""<script type="text/javascript" src=""""),_display_
 object javascripts extends javascripts_Scope0.javascripts
               /*
                   -- GENERATED --
-                  DATE: Fri Nov 22 11:37:42 BRST 2019
+                  DATE: Fri Nov 22 14:47:18 BRST 2019
                   SOURCE: /home/haroldo.nobrega/projetos/prototype-api-play-24/app/views/javascripts.scala.html
                   HASH: 48b38aaab6df0af6ba121cc527945da698cd1ec2
                   MATRIX: 839->0|902->37|916->43|970->77

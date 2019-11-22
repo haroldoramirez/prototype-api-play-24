@@ -49,7 +49,7 @@ Seq[Any](format.raw/*1.1*/("""<link rel="stylesheet" media="screen" href=""""),_
 object styles extends styles_Scope0.styles
               /*
                   -- GENERATED --
-                  DATE: Fri Nov 22 11:37:42 BRST 2019
+                  DATE: Fri Nov 22 14:47:19 BRST 2019
                   SOURCE: /home/haroldo.nobrega/projetos/prototype-api-play-24/app/views/styles.scala.html
                   HASH: 1ddf0642b3cc81927d66a4f298453ff883d209c0
                   MATRIX: 829->0|900->45|914->51|968->85

@@ -1,7 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1d300b-5902-4407-a2b1-dfb85a1ae34a" name="Default Changelist" comment="" />
+    <list default="true" id="6d1d300b-5902-4407-a2b1-dfb85a1ae34a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_adrianhurt_play_bootstrap_2_11_1_0_P24_B3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_adrianhurt_play_bootstrap_core_2_11_1_0_P24_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_filters_helpers_2_11_2_4_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_webjars_bootstrap_3_3_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_webjars_jquery_2_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/actions/AcaoDeRegistroDeAcesso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/autenticadores/AcessoDaApiAutenticado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/autenticadores/AdminAutenticado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/autenticadores/UsuarioAutenticado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/ApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/daos/ProdutoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/daos/TokenDeCadastroDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/daos/UsuarioDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/EmailDeCadastro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/EnvelopeDeProdutos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Papel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/RegistroDeAcesso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/TokenDaApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/TokenDeCadastro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/validators/ValidadorDeProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/validators/ValidadorDeUsuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/formularioDeLogin.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/formularioDeNovoProduto.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/formularioDeNovoUsuario.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/notificacoes.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/painel.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/produtos.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/usuarios.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/evolutions/default/1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/evolutions/default/2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implantacao/2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/formularioDeLogin.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/formularioDeNovoProduto.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/formularioDeNovoUsuario.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/main.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/notificacoes.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/painel.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/produtos.template.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/usuarios.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/prototype-api-play-24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/prototype-api-play-24.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/database.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/database.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/play.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/play.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-bb83ff62-8d1c-44ab-9dca-b0a7721824f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0a7fd526768ec0c5d91b$$anonfun$$sbtdef$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$0a7fd526768ec0c5d91b$$anonfun$$sbtdef$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0a7fd526768ec0c5d91b$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$0a7fd526768ec0c5d91b$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59257de732eeeb9cb336$$anonfun$$sbtdef$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59257de732eeeb9cb336$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59257de732eeeb9cb336.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59257de732eeeb9cb336.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/prototype-api-play-24-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/prototype-api-play-24-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/prototype-api-play-24-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/prototype-api-play-24-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-prototype-api-play-24-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/prototype-api-play-24/prototype-api-play-24_2.11/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/prototype-api-play-24/prototype-api-play-24_2.11/1.0/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/prototype-api-play-24/prototype-api-play-24_2.11/1.0/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/prototype-api-play-24/prototype-api-play-24_2.11/1.0/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/prototype-api-play-24-prototype-api-play-24_2.11-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/ReverseApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/ReverseAssets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/routes$javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/routes$javascript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/database.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/database.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_jsMessages2_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_mudaIdioma1_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at3_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at4_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned5_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/router/Routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index_Scope0$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index_Scope0$index.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index_Scope0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/index.template.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/javascripts.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/javascripts.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/styles.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/styles.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-mappings" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-mappings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,16 +198,32 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Class" />
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1TyNIyFXAFP6DYj9rHIwEnMHINc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/implantacao" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,7 +264,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="535294717" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1408176044" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1836608991" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="299244799" />
       </map>
@@ -103,5 +298,19 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

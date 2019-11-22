@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/routes
-// @DATE:Fri Nov 22 11:37:42 BRST 2019
+// @DATE:Fri Nov 22 14:47:18 BRST 2019
 
 package router
 
@@ -16,26 +16,38 @@ import _root_.play.libs.F
 
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
-  // @LINE:8
-  Application_1: controllers.Application,
-  // @LINE:11
-  Assets_0: controllers.Assets,
+  // @LINE:6
+  AdminController_0: controllers.AdminController,
+  // @LINE:10
+  ProdutoController_2: controllers.ProdutoController,
+  // @LINE:13
+  UsuarioController_1: controllers.UsuarioController,
+  // @LINE:25
+  ApiController_4: controllers.ApiController,
+  // @LINE:30
+  Assets_3: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
-    // @LINE:8
-    Application_1: controllers.Application,
-    // @LINE:11
-    Assets_0: controllers.Assets
-  ) = this(errorHandler, Application_1, Assets_0, "/")
+    // @LINE:6
+    AdminController_0: controllers.AdminController,
+    // @LINE:10
+    ProdutoController_2: controllers.ProdutoController,
+    // @LINE:13
+    UsuarioController_1: controllers.UsuarioController,
+    // @LINE:25
+    ApiController_4: controllers.ApiController,
+    // @LINE:30
+    Assets_3: controllers.Assets
+  ) = this(errorHandler, AdminController_0, ProdutoController_2, UsuarioController_1, ApiController_4, Assets_3, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, Application_1, Assets_0, prefix)
+    new Routes(errorHandler, AdminController_0, ProdutoController_2, UsuarioController_1, ApiController_4, Assets_3, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -43,11 +55,20 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.Application.index()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """idioma""", """controllers.Application.mudaIdioma()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """messages.js""", """controllers.Application.jsMessages()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """robots.txt""", """controllers.Assets.at(path:String = "/public", file:String = "robots.txt")"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """humans.txt""", """controllers.Assets.at(path:String = "/public", file:String = "humans.txt")"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/usuarios""", """controllers.AdminController.usuarios()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/produtos""", """controllers.AdminController.produtos()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """produto/novo""", """controllers.ProdutoController.salvaNovoProduto()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """produto/novo""", """controllers.ProdutoController.formularioDeNovoProduto()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """usuario/novo""", """controllers.UsuarioController.salvaNovoUsuario()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """usuario/novo""", """controllers.UsuarioController.formularioDeNovoUsuario()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """usuario/confirma/$email<[^/]+>/$codigo<[^/]+>""", """controllers.UsuarioController.confirmaUsuario(email:String, codigo:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """usuario/painel""", """controllers.UsuarioController.painel()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UsuarioController.formularioDeLogin()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UsuarioController.fazLogin()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.UsuarioController.fazLogout()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/produtos""", """controllers.ApiController.comFiltros"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/produtos/todos""", """controllers.ApiController.todos"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/produtos/tipo/$tipo<[^/]+>""", """controllers.ApiController.doTipo(tipo:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -56,97 +77,250 @@ class Routes(
   }}
 
 
-  // @LINE:8
-  private[this] lazy val controllers_Application_index0_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix)))
+  // @LINE:6
+  private[this] lazy val controllers_AdminController_usuarios0_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/usuarios")))
   )
-  private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-    Application_1.index(),
+  private[this] lazy val controllers_AdminController_usuarios0_invoker = createInvoker(
+    AdminController_0.usuarios(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Application",
-      "index",
+      "controllers.AdminController",
+      "usuarios",
       Nil,
       "GET",
-      """ Application""",
-      this.prefix + """"""
+      """ Rotas""",
+      this.prefix + """admin/usuarios"""
     )
   )
 
-  // @LINE:9
-  private[this] lazy val controllers_Application_mudaIdioma1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("idioma")))
+  // @LINE:7
+  private[this] lazy val controllers_AdminController_produtos1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/produtos")))
   )
-  private[this] lazy val controllers_Application_mudaIdioma1_invoker = createInvoker(
-    Application_1.mudaIdioma(),
+  private[this] lazy val controllers_AdminController_produtos1_invoker = createInvoker(
+    AdminController_0.produtos(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Application",
-      "mudaIdioma",
+      "controllers.AdminController",
+      "produtos",
       Nil,
       "GET",
       """""",
-      this.prefix + """idioma"""
+      this.prefix + """admin/produtos"""
     )
   )
 
   // @LINE:10
-  private[this] lazy val controllers_Application_jsMessages2_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("messages.js")))
+  private[this] lazy val controllers_ProdutoController_salvaNovoProduto2_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("produto/novo")))
   )
-  private[this] lazy val controllers_Application_jsMessages2_invoker = createInvoker(
-    Application_1.jsMessages(),
+  private[this] lazy val controllers_ProdutoController_salvaNovoProduto2_invoker = createInvoker(
+    ProdutoController_2.salvaNovoProduto(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Application",
-      "jsMessages",
+      "controllers.ProdutoController",
+      "salvaNovoProduto",
       Nil,
-      "GET",
+      "POST",
       """""",
-      this.prefix + """messages.js"""
+      this.prefix + """produto/novo"""
     )
   )
 
   // @LINE:11
-  private[this] lazy val controllers_Assets_at3_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("robots.txt")))
+  private[this] lazy val controllers_ProdutoController_formularioDeNovoProduto3_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("produto/novo")))
   )
-  private[this] lazy val controllers_Assets_at3_invoker = createInvoker(
-    Assets_0.at(fakeValue[String], fakeValue[String]),
+  private[this] lazy val controllers_ProdutoController_formularioDeNovoProduto3_invoker = createInvoker(
+    ProdutoController_2.formularioDeNovoProduto(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Assets",
-      "at",
-      Seq(classOf[String], classOf[String]),
+      "controllers.ProdutoController",
+      "formularioDeNovoProduto",
+      Nil,
       "GET",
       """""",
-      this.prefix + """robots.txt"""
+      this.prefix + """produto/novo"""
     )
   )
 
-  // @LINE:12
-  private[this] lazy val controllers_Assets_at4_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("humans.txt")))
+  // @LINE:13
+  private[this] lazy val controllers_UsuarioController_salvaNovoUsuario4_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("usuario/novo")))
   )
-  private[this] lazy val controllers_Assets_at4_invoker = createInvoker(
-    Assets_0.at(fakeValue[String], fakeValue[String]),
+  private[this] lazy val controllers_UsuarioController_salvaNovoUsuario4_invoker = createInvoker(
+    UsuarioController_1.salvaNovoUsuario(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Assets",
-      "at",
-      Seq(classOf[String], classOf[String]),
+      "controllers.UsuarioController",
+      "salvaNovoUsuario",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """usuario/novo"""
+    )
+  )
+
+  // @LINE:14
+  private[this] lazy val controllers_UsuarioController_formularioDeNovoUsuario5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("usuario/novo")))
+  )
+  private[this] lazy val controllers_UsuarioController_formularioDeNovoUsuario5_invoker = createInvoker(
+    UsuarioController_1.formularioDeNovoUsuario(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UsuarioController",
+      "formularioDeNovoUsuario",
+      Nil,
       "GET",
       """""",
-      this.prefix + """humans.txt"""
+      this.prefix + """usuario/novo"""
     )
   )
 
   // @LINE:15
-  private[this] lazy val controllers_Assets_versioned5_route = Route("GET",
+  private[this] lazy val controllers_UsuarioController_confirmaUsuario6_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("usuario/confirma/"), DynamicPart("email", """[^/]+""",true), StaticPart("/"), DynamicPart("codigo", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_UsuarioController_confirmaUsuario6_invoker = createInvoker(
+    UsuarioController_1.confirmaUsuario(fakeValue[String], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UsuarioController",
+      "confirmaUsuario",
+      Seq(classOf[String], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """usuario/confirma/$email<[^/]+>/$codigo<[^/]+>"""
+    )
+  )
+
+  // @LINE:18
+  private[this] lazy val controllers_UsuarioController_painel7_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("usuario/painel")))
+  )
+  private[this] lazy val controllers_UsuarioController_painel7_invoker = createInvoker(
+    UsuarioController_1.painel(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UsuarioController",
+      "painel",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """usuario/painel"""
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_UsuarioController_formularioDeLogin8_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  )
+  private[this] lazy val controllers_UsuarioController_formularioDeLogin8_invoker = createInvoker(
+    UsuarioController_1.formularioDeLogin(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UsuarioController",
+      "formularioDeLogin",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """login"""
+    )
+  )
+
+  // @LINE:21
+  private[this] lazy val controllers_UsuarioController_fazLogin9_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  )
+  private[this] lazy val controllers_UsuarioController_fazLogin9_invoker = createInvoker(
+    UsuarioController_1.fazLogin(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UsuarioController",
+      "fazLogin",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """login"""
+    )
+  )
+
+  // @LINE:22
+  private[this] lazy val controllers_UsuarioController_fazLogout10_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
+  )
+  private[this] lazy val controllers_UsuarioController_fazLogout10_invoker = createInvoker(
+    UsuarioController_1.fazLogout(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UsuarioController",
+      "fazLogout",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """logout"""
+    )
+  )
+
+  // @LINE:25
+  private[this] lazy val controllers_ApiController_comFiltros11_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/produtos")))
+  )
+  private[this] lazy val controllers_ApiController_comFiltros11_invoker = createInvoker(
+    ApiController_4.comFiltros,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ApiController",
+      "comFiltros",
+      Nil,
+      "GET",
+      """ API""",
+      this.prefix + """api/produtos"""
+    )
+  )
+
+  // @LINE:26
+  private[this] lazy val controllers_ApiController_todos12_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/produtos/todos")))
+  )
+  private[this] lazy val controllers_ApiController_todos12_invoker = createInvoker(
+    ApiController_4.todos,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ApiController",
+      "todos",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """api/produtos/todos"""
+    )
+  )
+
+  // @LINE:27
+  private[this] lazy val controllers_ApiController_doTipo13_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/produtos/tipo/"), DynamicPart("tipo", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_ApiController_doTipo13_invoker = createInvoker(
+    ApiController_4.doTipo(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ApiController",
+      "doTipo",
+      Seq(classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """api/produtos/tipo/$tipo<[^/]+>"""
+    )
+  )
+
+  // @LINE:30
+  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
-    Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
+    Assets_3.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -161,40 +335,94 @@ class Routes(
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
-    // @LINE:8
-    case controllers_Application_index0_route(params) =>
+    // @LINE:6
+    case controllers_AdminController_usuarios0_route(params) =>
       call { 
-        controllers_Application_index0_invoker.call(Application_1.index())
+        controllers_AdminController_usuarios0_invoker.call(AdminController_0.usuarios())
       }
   
-    // @LINE:9
-    case controllers_Application_mudaIdioma1_route(params) =>
+    // @LINE:7
+    case controllers_AdminController_produtos1_route(params) =>
       call { 
-        controllers_Application_mudaIdioma1_invoker.call(Application_1.mudaIdioma())
+        controllers_AdminController_produtos1_invoker.call(AdminController_0.produtos())
       }
   
     // @LINE:10
-    case controllers_Application_jsMessages2_route(params) =>
+    case controllers_ProdutoController_salvaNovoProduto2_route(params) =>
       call { 
-        controllers_Application_jsMessages2_invoker.call(Application_1.jsMessages())
+        controllers_ProdutoController_salvaNovoProduto2_invoker.call(ProdutoController_2.salvaNovoProduto())
       }
   
     // @LINE:11
-    case controllers_Assets_at3_route(params) =>
-      call(Param[String]("path", Right("/public")), Param[String]("file", Right("robots.txt"))) { (path, file) =>
-        controllers_Assets_at3_invoker.call(Assets_0.at(path, file))
+    case controllers_ProdutoController_formularioDeNovoProduto3_route(params) =>
+      call { 
+        controllers_ProdutoController_formularioDeNovoProduto3_invoker.call(ProdutoController_2.formularioDeNovoProduto())
       }
   
-    // @LINE:12
-    case controllers_Assets_at4_route(params) =>
-      call(Param[String]("path", Right("/public")), Param[String]("file", Right("humans.txt"))) { (path, file) =>
-        controllers_Assets_at4_invoker.call(Assets_0.at(path, file))
+    // @LINE:13
+    case controllers_UsuarioController_salvaNovoUsuario4_route(params) =>
+      call { 
+        controllers_UsuarioController_salvaNovoUsuario4_invoker.call(UsuarioController_1.salvaNovoUsuario())
+      }
+  
+    // @LINE:14
+    case controllers_UsuarioController_formularioDeNovoUsuario5_route(params) =>
+      call { 
+        controllers_UsuarioController_formularioDeNovoUsuario5_invoker.call(UsuarioController_1.formularioDeNovoUsuario())
       }
   
     // @LINE:15
-    case controllers_Assets_versioned5_route(params) =>
+    case controllers_UsuarioController_confirmaUsuario6_route(params) =>
+      call(params.fromPath[String]("email", None), params.fromPath[String]("codigo", None)) { (email, codigo) =>
+        controllers_UsuarioController_confirmaUsuario6_invoker.call(UsuarioController_1.confirmaUsuario(email, codigo))
+      }
+  
+    // @LINE:18
+    case controllers_UsuarioController_painel7_route(params) =>
+      call { 
+        controllers_UsuarioController_painel7_invoker.call(UsuarioController_1.painel())
+      }
+  
+    // @LINE:20
+    case controllers_UsuarioController_formularioDeLogin8_route(params) =>
+      call { 
+        controllers_UsuarioController_formularioDeLogin8_invoker.call(UsuarioController_1.formularioDeLogin())
+      }
+  
+    // @LINE:21
+    case controllers_UsuarioController_fazLogin9_route(params) =>
+      call { 
+        controllers_UsuarioController_fazLogin9_invoker.call(UsuarioController_1.fazLogin())
+      }
+  
+    // @LINE:22
+    case controllers_UsuarioController_fazLogout10_route(params) =>
+      call { 
+        controllers_UsuarioController_fazLogout10_invoker.call(UsuarioController_1.fazLogout())
+      }
+  
+    // @LINE:25
+    case controllers_ApiController_comFiltros11_route(params) =>
+      call { 
+        controllers_ApiController_comFiltros11_invoker.call(ApiController_4.comFiltros)
+      }
+  
+    // @LINE:26
+    case controllers_ApiController_todos12_route(params) =>
+      call { 
+        controllers_ApiController_todos12_invoker.call(ApiController_4.todos)
+      }
+  
+    // @LINE:27
+    case controllers_ApiController_doTipo13_route(params) =>
+      call(params.fromPath[String]("tipo", None)) { (tipo) =>
+        controllers_ApiController_doTipo13_invoker.call(ApiController_4.doTipo(tipo))
+      }
+  
+    // @LINE:30
+    case controllers_Assets_versioned14_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned5_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned14_invoker.call(Assets_3.versioned(path, file))
       }
   }
 }
