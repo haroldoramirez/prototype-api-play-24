@@ -1,0 +1,12 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/email.conf,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/email.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/messages.en,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/messages.en)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/evolutions,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/database.conf,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/database.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/server.conf,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/server.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/application.conf,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/logback.xml,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/routes,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/messages.pt,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/messages.pt)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/messages.es,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/messages.es)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo.nobrega/projetos/prototype-api-play-24/conf/secure.conf,/home/haroldo.nobrega/projetos/prototype-api-play-24/target/scala-2.11/classes/secure.conf)[0m

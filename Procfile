@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/prototype-api-play-24 -Dplay.evolutions.db.default.autoApplyDowns=true -Dplay.evolutions.db.default.autoApply=true -Dhttp.port=${PORT}
